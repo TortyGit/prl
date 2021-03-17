@@ -1,0 +1,170 @@
+%% This is file `prletters-template.tex',
+%% 
+%% Copyright 2013 Elsevier Ltd
+%% 
+%% This file is part of the 'Elsarticle Bundle'.
+%% ---------------------------------------------
+%% 
+%% It may be distributed under the conditions of the LaTeX Project Public
+%% License, either version 1.2 of this license or (at your option) any
+%% later version.  The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.2 or later is part of all distributions of LaTeX
+%% version 1999/12/01 or later.
+%% 
+%% The list of all files belonging to the 'Elsarticle Bundle' is
+%% given in the file `manifest.txt'.
+%% 
+%% Template article for Elsevier's document class `elsarticle'
+%% with harvard style bibliographic references
+%%
+%% $Id: prletters-template-with-authorship.tex 69 2013-07-15 10:15:25Z rishi $
+%%
+%% This template has no review option
+%% 
+%% Use the options `twocolumn,final' to obtain the final layout
+\documentclass[times,twocolumn,final,authoryear]{elsarticle}
+
+%% Stylefile to load PR Letters template
+\usepackage{prletters}
+\usepackage{framed,multirow}
+
+%% The amssymb package provides various useful mathematical symbols
+\usepackage{amssymb}
+\usepackage{latexsym}
+
+% Following three lines are needed for this document.
+% If you are not loading colors or url, then these are
+% not required.
+\usepackage{url}
+\usepackage{xcolor}
+
+
+\journal{Pattern Recognition Letters}
+
+\begin{document}
+
+
+\begin{table*}[!th]
+\ifpreprint\else\vspace*{-5pc}\fi
+
+\section*{Graphical Abstract (Optional)}
+To create your abstract, please type over the instructions in the
+template box below.  Fonts or abstract dimensions should not be changed
+or altered. 
+
+\vskip1pc
+\fbox{
+\begin{tabular}{p{.4\textwidth}p{.5\textwidth}}
+\bf Type the title of your article here  \\
+Author's names here \\[1pc]
+\includegraphics[width=.3\textwidth]{top-elslogo-fm1.pdf}
+& 
+This is the dummy text for graphical abstract.
+%}\\
+\end{tabular}
+}
+
+\end{table*}
+
+\clearpage
+\thispagestyle{empty}
+
+\ifpreprint
+  \vspace*{-1pc}
+\else
+%  \vspace*{-6pc}
+\fi
+
+\begin{table*}[!t]
+\ifpreprint\else\vspace*{-15pc}\fi
+
+\section*{Research Highlights (Required)}
+
+To create your highlights, please type the highlights against each
+\verb+\item+ command. 
+
+\vskip1pc
+
+\fboxsep=6pt
+\fbox{
+\begin{minipage}{.95\textwidth}
+It should be short collection of bullet points that convey the core
+findings of the article. It should  include 3 to 5 bullet points
+(maximum 85 characters, including spaces, per bullet point.)  
+\vskip1pc
+\begin{itemize}
+
+ \item 
+
+ \item 
+
+ \item
+
+ \item
+
+ \item
+
+\end{itemize}
+\vskip1pc
+\end{minipage}
+}
+
+\end{table*}
+
+\clearpage
+
+
+\ifpreprint
+  \setcounter{page}{1}
+\else
+  \setcounter{page}{1}
+\fi
+
+\begin{frontmatter}
+
+\title{Type the title of your paper, only capitalize first
+word and proper nouns}
+
+\author[1]{Given-name \snm{Surname}\corref{cor1}} 
+\cortext[cor1]{Corresponding author: 
+  Tel.: +0-000-000-0000;  
+  fax: +0-000-000-0000;}
+\ead{author@author.com}
+\author[2]{Given-name \snm{Surname}}
+\author[2]{Given-name \snm{Surname}}
+
+\address[1]{Affiliation 1, Address, City and Postal Code, Country}
+\address[2]{Affiliation 2, Address, City and Postal Code, Country}
+
+\received{1 May 2013}
+\finalform{10 May 2013}
+\accepted{13 May 2013}
+\availableonline{15 May 2013}
+\communicated{S. Sarkar}
+
+
+\begin{abstract}
+Type your abstract here. 
+\end{abstract}
+
+\begin{keyword}
+\MSC 41A05\sep 41A10\sep 65D05\sep 65D17
+\KWD Keyword1\sep Keyword2\sep Keyword3
+
+%% MSC codes here, in the form: \MSC code \sep code
+%% or \MSC[2008] code \sep code (2000 is the default)
+\end{keyword}
+
+\end{frontmatter}
+
+%\linenumbers
+
+
+\input{1-intro}
+\input{2-spectral}
+
+
+\end{document}
+
+%%
